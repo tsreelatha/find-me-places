@@ -1,0 +1,3 @@
+rootProject.name = 'find-me-places'
+include 'find-me-places-app'
+

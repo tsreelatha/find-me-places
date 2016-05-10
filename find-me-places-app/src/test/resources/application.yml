@@ -1,0 +1,9 @@
+spring.profiles.active: development
+
+server.port: 8133
+
+integration:
+  googlePlaces:
+    nearByPlaces:
+      url: https://maps.googleapis.com/maps/api/place/nearbysearch/json
+      key: AIzaSyCEqz26NlZh7W9Pern9GoCv95cZobqcbnc

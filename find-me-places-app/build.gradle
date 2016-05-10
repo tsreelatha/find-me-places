@@ -1,0 +1,28 @@
+buildscript {
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath 'net.researchgate:gradle-release:2.3.0'
+    }
+}
+
+apply plugin: 'spring-boot'
+apply plugin: 'net.researchgate.release'
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web')
+
+    compile 'org.codehaus.groovy:groovy-all:2.4.6'
+
+    compile 'org.springframework.boot:spring-boot-starter-logging'
+    compile 'ch.qos.logback:logback-core:1.1.5'
+    compile 'org.json:json:20160212'
+    compile('org.apache.commons:commons-lang3:3.4')
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile 'org.spockframework:spock-spring:1.0-groovy-2.4'
+}
+
+springBoot {
+    executable = true
+}
